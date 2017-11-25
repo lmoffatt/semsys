@@ -1,0 +1,65 @@
+\documentclass{article}
+\author{Luciano Moffatt}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\begin{document}
+
+\title{semsys}
+
+semsys es un semantic system. La idea es que sea una template library que maneje magnitudes (quantities), unidades y que sea la base para armar sistemas de ecuaciones. 
+
+En principio tendria que armar el sistema de unidades mks y cgs. 
+Y lograr escribir y leer mediciones en dicho sistema. 
+Tendria que sumar y restar mediciones y multiplicar y dividir mediciones. 
+
+Luego tendria que incorporar vectores y matrices de mediciones. 
+
+Estos vectores y matrices tendrian indices semantizados tambien. 
+
+Ahora, hay dos formas de semantizar. 
+Por magnitud, la cual es ineludible y por identidad, la cual esta determinada por posicion y naturaleza. 
+
+Hay que distinguir objetos y eventos. 
+
+Los objetos definen sistema de referencia espacial y los eventos sistema de referencia temporal. 
+(quizas los eventos definan ambos..)
+
+
+Bueno, lista de quantities
+\begin{enumerate}
+\item lenght meter
+\item time second
+\item mass kilogram
+\item electric current Ampere
+\item thermodynamic temperature Kelvin
+\item amount of sustance mole
+\item luminous intensity candela
+\end{enumerate}
+
+
+Bueno, estoy tratando de implementar el manejo de quantities y unidades. 
+
+Pregunta numero uno: 
+diferencio entre quantities y unidades?
+Ejemplo, velocidad. Es una magnitud, pero no tiene unidad, es una unidad derivada. 
+Entonces, cuando señalo una variable, tengo que decir las unidades. 
+
+
+\section{viernes 24 de noviembre}
+Avance bastante con semsys. 
+Veo claramente el problema de la semantica: es decir la asignacion de nombres a objetos matematicos, es decir elementos de la categoria. 
+Estos elementos de la categoria se los puede generar a partir de elementos "basicos". Pensando en el grupo de las palabras conmutativas... 
+Entonces, la idea es que la clase grupo sea la que contiene las definiciones y los indices. 
+
+
+Finalmente logre que corra la 
+
+
+
+
+
+
+
+
+\end{document}
